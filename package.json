@@ -7,8 +7,10 @@
     "build:dark": "postcss ./src/input.css -o ./css/output.css",
     "build:light": "postcss ./src/input-light.css -o ./css/output-light.css",
     "build": "npm run build:dark && npm run build:light",
+    "build:env": "node build-env.js",
     "dev": "postcss ./src/input.css -o ./css/output.css --watch",
     "dev:light": "postcss ./src/input-light.css -o ./css/output-light.css --watch",
+    "pdf": "node export-pdf.js",
     "start": "npx serve ."
   },
   "repository": {
@@ -28,5 +30,8 @@
     "postcss": "^8.5.8",
     "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.2.2"
+  },
+  "dependencies": {
+    "puppeteer": "^24.39.1"
   }
 }

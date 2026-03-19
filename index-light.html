@@ -44,7 +44,40 @@
     .cg-bl { transform: scaleY(-1); }
     .cg-br { transform: scale(-1,-1); }
 
-    @media print { body{background:white;padding:0} .card::before{display:none} }
+    @media print {
+      html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #fffdf5 !important;
+        width: 100% !important;
+        height: 100% !important;
+      }
+      body > *:not(.card) {
+        display: none !important;
+      }
+      body {
+        position: relative;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fffdf5 !important;
+        z-index: -1;
+      }
+      .card {
+        page-break-inside: avoid;
+        margin: 0 !important;
+        max-width: 100%;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+      }
+      .card::before { display: none; }
+    }
   </style>
 </head>
 
@@ -53,7 +86,8 @@
 
   <!-- Theme switcher -->
   <a href="index.html"
-     class="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/40 bg-white/60 text-brown-2 text-[12px] tracking-[2px] uppercase font-lato hover:bg-gold hover:text-white transition-all duration-300">
+     class="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/40 bg-white/60 text-brown-2 text-[12px] tracking-[2px] uppercase font-lato hover:bg-gold hover:text-white transition-all duration-300"
+     style="display: none;">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
       <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
@@ -343,8 +377,7 @@
           <div class="text-[13px] tracking-[0.5px] font-normal pt-[1px]" style="color:#9a7d5a;">Address</div>
           <div class="font-bold text-center pt-[1px] px-[5px]" style="color:#b8862a;">◆</div>
           <div class="info-value font-playfair text-[15px] leading-[1.6] ml-[5px]" style="color:#2c1a0e;">
-            Bashar Manjil, East Fatehpur,<br>
-            Kabirhat Pouroshova, Noakhali
+            __ADDRESS__
           </div>
         </div>
 
@@ -352,7 +385,7 @@
           <div class="text-[13px] tracking-[0.5px] font-normal" style="color:#9a7d5a;">Phone</div>
           <div class="font-bold text-center px-[5px]" style="color:#b8862a;">◆</div>
           <div class="info-value font-playfair text-[15px] leading-[1.6] ml-[5px]" style="color:#2c1a0e;">
-            01813385381 <span class="text-[12px] not-italic" style="color:#9a7d5a;">(Mother)</span>
+            __PHONE__ <span class="text-[12px] not-italic" style="color:#9a7d5a;">(Mother)</span>
           </div>
         </div>
 
