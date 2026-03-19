@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Dark Theme Colors */
   --color-navy: #0b1426;
   --color-navy-2: #0f1e38;
   --color-gold: #c9a84c;
@@ -11,6 +12,7 @@
   --color-ivory: #f0e6cc;
   --color-muted: #a89070;
 
+  /* Font Families */
   --font-family-amiri: 'Amiri', serif;
   --font-family-playfair: 'Playfair Display', serif;
   --font-family-lato: 'Lato', sans-serif;

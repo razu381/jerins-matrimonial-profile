@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss ./src/input.css -o ./css/output.css",
+    "build:dark": "postcss ./src/input.css -o ./css/output.css",
+    "build:light": "postcss ./src/input-light.css -o ./css/output-light.css",
+    "build": "npm run build:dark && npm run build:light",
     "dev": "postcss ./src/input.css -o ./css/output.css --watch",
-    "build": "postcss ./src/input.css -o ./css/output.css",
+    "dev:light": "postcss ./src/input-light.css -o ./css/output-light.css --watch",
     "start": "npx serve ."
   },
   "repository": {
