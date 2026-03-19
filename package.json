@@ -1,0 +1,30 @@
+{
+  "name": "jerins-bio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss ./src/input.css -o ./css/output.css",
+    "dev": "postcss ./src/input.css -o ./css/output.css --watch",
+    "build": "postcss ./src/input.css -o ./css/output.css",
+    "start": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razu381/jerins-matrimonial-profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razu381/jerins-matrimonial-profile/issues"
+  },
+  "homepage": "https://github.com/razu381/jerins-matrimonial-profile#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.2.2"
+  }
+}
