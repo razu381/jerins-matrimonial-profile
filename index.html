@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata – Marufa Akter Jerin</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:  { DEFAULT: '#0b1426', 2: '#0f1e38' },
+            gold:  { DEFAULT: '#c9a84c', 2: '#e8cc80', 3: '#f5e4a8' },
+            rose:  '#c97b6a',
+            cream: '#fdf6e3',
+            ivory: '#f0e6cc',
+            muted: '#a89070',
+          },
+          fontFamily: {
+            amiri:    ['Amiri',           'serif'],
+            playfair: ['Playfair Display','serif'],
+            lato:     ['Lato',            'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom styles (animations, pseudo-elements, complex gradients) -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    @keyframes rotateSlowly { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+
+    .card { animation: fadeUp .8s ease both; }
+    .card::before {
+      content:''; position:absolute; inset:-2px;
+      background: linear-gradient(135deg,#c9a84c,transparent 40%,#c9a84c 100%);
+      border-radius:2px; z-index:0; opacity:.5;
+    }
+    .mandala-wrap { animation: rotateSlowly 60s linear infinite; }
+    .arch-svg { filter: drop-shadow(0 0 18px rgba(201,168,76,.4)); }
+
+    .divider-line     { flex:1; height:1px; background:linear-gradient(90deg,transparent,#c9a84c,transparent); }
+    .divider-line-end { flex:1; height:1px; background:linear-gradient(90deg,#c9a84c,transparent); }
+
+    .tline   { flex:1; height:1px; background:linear-gradient(90deg,transparent,rgba(201,168,76,.4)); }
+    .tline-l { flex:1; height:1px; background:linear-gradient(90deg,rgba(201,168,76,.4),transparent); }
+
+    .body-content { position:relative; }
+    .body-content::before, .body-content::after {
+      content:''; position:absolute; top:0; bottom:0; width:4px;
+      background: repeating-linear-gradient(180deg,
+        #c9a84c 0,#c9a84c 4px, transparent 4px,transparent 14px,
+        rgba(201,168,76,.3) 14px,rgba(201,168,76,.3) 18px,
+        transparent 18px,transparent 28px);
+      opacity:.35;
+    }
+    .body-content::before { left:22px; }
+    .body-content::after  { right:22px; }
+
+    .footer-wrap::before {
+      content:''; position:absolute; inset:0;
+      background: linear-gradient(90deg,transparent,rgba(201,168,76,.05),transparent);
+    }
+    .bismillah     { text-shadow: 0 0 20px rgba(201,168,76,.6); }
+    .person-name   { text-shadow: 0 2px 20px rgba(201,168,76,.5); }
+    .footer-arabic { text-shadow: 0 0 12px rgba(201,168,76,.4); }
+    .info-value    { font-style: italic; }
+
+    .cg-tr { transform: scaleX(-1); }
+    .cg-bl { transform: scaleY(-1); }
+    .cg-br { transform: scale(-1,-1); }
+
+    @media print { body{background:white;padding:0} .card::before{display:none} }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col justify-start items-center py-10 px-5 font-lato" style="background: radial-gradient(ellipse at top, #1a2a4a 0%, #050d1a 70%);">
+
+  <!-- Theme switcher -->
+  <a href="index-light.html"
+     class="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] tracking-[2px] uppercase font-lato transition-all duration-300"
+     style="border:1px solid rgba(201,168,76,.35); background:rgba(255,255,255,.05); color:#c9a84c;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+    Switch to Light
+  </a>
+
+  <!-- ══ CARD ══ -->
+  <div class="card w-[660px] max-w-full relative overflow-hidden">
+    <div class="card-inner relative z-[1] border border-gold/30" style="background: linear-gradient(160deg, #0f1e38 0%, #0b1426 60%, #0d1932 100%);">
+
+      <!-- Geometric inner border frame -->
+      <div class="absolute inset-[6px] border border-gold/20 pointer-events-none z-10"></div>
+
+      <!-- ── CORNER GEMS ── -->
+      <!-- Top-left -->
+      <svg class="absolute top-[6px] left-[6px] w-[42px] h-[42px] z-[12]" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="0" x2="0" y2="42" stroke="#c9a84c" stroke-width="2.5" opacity=".7"/>
+        <line x1="0" y1="0" x2="42" y2="0" stroke="#c9a84c" stroke-width="2.5" opacity=".7"/>
+        <line x1="5" y1="5" x2="5" y2="30" stroke="#c9a84c" stroke-width=".8" opacity=".3"/>
+        <line x1="5" y1="5" x2="30" y2="5" stroke="#c9a84c" stroke-width=".8" opacity=".3"/>
+        <g transform="translate(14,14)">
+          <polygon points="0,-9 2.2,-2.2 9,0 2.2,2.2 0,9 -2.2,2.2 -9,0 -2.2,-2.2" fill="#c9a84c" opacity=".9"/>
+          <polygon points="0,-9 2.2,-2.2 9,0 2.2,2.2 0,9 -2.2,2.2 -9,0 -2.2,-2.2" fill="none" stroke="#e8cc80" stroke-width=".8" transform="rotate(22.5)" opacity=".7"/>
+          <circle cx="0" cy="0" r="2.5" fill="#0b1426"/>
+          <circle cx="0" cy="0" r="1.2" fill="#e8cc80"/>
+        </g>
+      </svg>
+      <!-- Top-right -->
+      <svg class="cg-tr absolute top-[6px] right-[6px] w-[42px] h-[42px] z-[12]" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="0" x2="0" y2="42" stroke="#c9a84c" stroke-width="2.5" opacity=".7"/>
+        <line x1="0" y1="0" x2="42" y2="0" stroke="#c9a84c" stroke-width="2.5" opacity=".7"/>
+        <line x1="5" y1="5" x2="5" y2="30" stroke="#c9a84c" stroke-width=".8" opacity=".3"/>
+        <line x1="5" y1="5" x2="30" y2="5" stroke="#c9a84c" stroke-width=".8" opacity=".3"/>
+        <g transform="translate(14,14)">
+          <polygon points="0,-9 2.2,-2.2 9,0 2.2,2.2 0,9 -2.2,2.2 -9,0 -2.2,-2.2" fill="#c9a84c" opacity=".9"/>
+          <polygon points="0,-9 2.2,-2.2 9,0 2.2,2.2 0,9 -2.2,2.2 -9,0 -2.2,-2.2" fill="none" stroke="#e8cc80" stroke-width=".8" transform="rotate(22.5)" opacity=".7"/>
+          <circle cx="0" cy="0" r="2.5" fill="#0b1426"/>
+          <circle cx="0" cy="0" r="1.2" fill="#e8cc80"/>
+        </g>
+      </svg>
+      <!-- Bottom-left -->
+      <svg class="cg-bl absolute bottom-[6px] left-[6px] w-[42px] h-[42px] z-[12]" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="0" x2="0" y2="42" stroke="#c9a84c" stroke-width="2.5" opacity=".7"/>
+        <line x1="0" y1="0" x2="42" y2="0" stroke="#c9a84c" stroke-width="2.5" opacity=".7"/>
+        <line x1="5" y1="5" x2="5" y2="30" stroke="#c9a84c" stroke-width=".8" opacity=".3"/>
+        <line x1="5" y1="5" x2="30" y2="5" stroke="#c9a84c" stroke-width=".8" opacity=".3"/>
+        <g transform="translate(14,14)">
+          <polygon points="0,-9 2.2,-2.2 9,0 2.2,2.2 0,9 -2.2,2.2 -9,0 -2.2,-2.2" fill="#c9a84c" opacity=".9"/>
+          <polygon points="0,-9 2.2,-2.2 9,0 2.2,2.2 0,9 -2.2,2.2 -9,0 -2.2,-2.2" fill="none" stroke="#e8cc80" stroke-width=".8" transform="rotate(22.5)" opacity=".7"/>
+          <circle cx="0" cy="0" r="2.5" fill="#0b1426"/>
+          <circle cx="0" cy="0" r="1.2" fill="#e8cc80"/>
+        </g>
+      </svg>
+      <!-- Bottom-right -->
+      <svg class="cg-br absolute bottom-[6px] right-[6px] w-[42px] h-[42px] z-[12]" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="0" x2="0" y2="42" stroke="#c9a84c" stroke-width="2.5" opacity=".7"/>
+        <line x1="0" y1="0" x2="42" y2="0" stroke="#c9a84c" stroke-width="2.5" opacity=".7"/>
+        <line x1="5" y1="5" x2="5" y2="30" stroke="#c9a84c" stroke-width=".8" opacity=".3"/>
+        <line x1="5" y1="5" x2="30" y2="5" stroke="#c9a84c" stroke-width=".8" opacity=".3"/>
+        <g transform="translate(14,14)">
+          <polygon points="0,-9 2.2,-2.2 9,0 2.2,2.2 0,9 -2.2,2.2 -9,0 -2.2,-2.2" fill="#c9a84c" opacity=".9"/>
+          <polygon points="0,-9 2.2,-2.2 9,0 2.2,2.2 0,9 -2.2,2.2 -9,0 -2.2,-2.2" fill="none" stroke="#e8cc80" stroke-width=".8" transform="rotate(22.5)" opacity=".7"/>
+          <circle cx="0" cy="0" r="2.5" fill="#0b1426"/>
+          <circle cx="0" cy="0" r="1.2" fill="#e8cc80"/>
+        </g>
+      </svg>
+
+      <!-- ══ HEADER ══ -->
+      <div class="relative p-0 overflow-hidden min-h-[260px]">
+
+        <!-- Islamic tile pattern background -->
+        <div class="header-bg absolute inset-0" style="background-color:#0d1830; background-image: repeating-conic-gradient(from 0deg at 50% 50%, rgba(201,168,76,.07) 0deg 45deg, rgba(201,168,76,.02) 45deg 90deg); background-size:52px 52px;"></div>
+
+        <!-- Radial glow behind arch -->
+        <div class="header-glow absolute -top-10 left-1/2 -translate-x-1/2 w-full h-[360px] pointer-events-none" style="background: radial-gradient(ellipse, rgba(201,168,76,.18) 0%, transparent 70%);"></div>
+
+        <!-- Spinning mandala -->
+        <div class="mandala-wrap absolute top-[10px] left-1/2 -translate-x-1/2 w-[260px] h-[260px] opacity-[0.10]">
+          <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(110,110)">
+              <g opacity=".8">
+                <polygon points="0,-100 13,-13 100,0 13,13 0,100 -13,13 -100,0 -13,-13" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+                <polygon points="0,-100 13,-13 100,0 13,13 0,100 -13,13 -100,0 -13,-13" fill="none" stroke="#c9a84c" stroke-width="1" transform="rotate(22.5)"/>
+              </g>
+              <g opacity=".6">
+                <polygon points="0,-72 9,-9 72,0 9,9 0,72 -9,9 -72,0 -9,-9" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
+                <polygon points="0,-72 9,-9 72,0 9,9 0,72 -9,9 -72,0 -9,-9" fill="none" stroke="#c9a84c" stroke-width=".8" transform="rotate(22.5)"/>
+              </g>
+              <g opacity=".5">
+                <polygon points="0,-44 6,-6 44,0 6,6 0,44 -6,6 -44,0 -6,-6" fill="none" stroke="#c9a84c" stroke-width="1"/>
+              </g>
+              <line x1="0" y1="-104" x2="0" y2="104" stroke="#c9a84c" stroke-width=".5" opacity=".3"/>
+              <line x1="-104" y1="0" x2="104" y2="0" stroke="#c9a84c" stroke-width=".5" opacity=".3"/>
+              <line x1="-73" y1="-73" x2="73" y2="73" stroke="#c9a84c" stroke-width=".5" opacity=".3"/>
+              <line x1="73" y1="-73" x2="-73" y2="73" stroke="#c9a84c" stroke-width=".5" opacity=".3"/>
+              <circle cx="0" cy="0" r="18" fill="none" stroke="#c9a84c" stroke-width="1"/>
+              <circle cx="0" cy="0" r="8" fill="#c9a84c" opacity=".6"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Arch + content overlay — arch spans full card width -->
+        <div class="relative z-[3]">
+
+          <!-- Wide arch SVG: viewBox 660×310, center x=330 -->
+          <svg class="arch-svg w-full" viewBox="0 0 660 248" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="archGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stop-color="#c9a84c" stop-opacity=".22"/>
+                <stop offset="100%" stop-color="#c9a84c" stop-opacity=".03"/>
+              </linearGradient>
+              <linearGradient id="strokeGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%"   stop-color="#e8cc80"/>
+                <stop offset="50%"  stop-color="#c9a84c"/>
+                <stop offset="100%" stop-color="#e8cc80"/>
+              </linearGradient>
+            </defs>
+            <!-- Arch fill -->
+            <path d="M28,310 L28,130 Q28,22 330,12 Q632,22 632,130 L632,310 Z" fill="url(#archGrad)"/>
+            <!-- Arch outer stroke -->
+            <path d="M28,310 L28,130 Q28,22 330,12 Q632,22 632,130 L632,310" fill="none" stroke="url(#strokeGrad)" stroke-width="2"/>
+            <!-- Inner double line -->
+            <path d="M50,310 L50,134 Q50,42 330,32 Q610,42 610,134 L610,310" fill="none" stroke="#c9a84c" stroke-width=".8" opacity=".4"/>
+            <!-- Muqarnas centered at x=330 -->
+            <g opacity=".9">
+              <path d="M300,14 L315,30 L330,14 L345,30 L360,14" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M282,22 L297,38 L312,26" fill="none" stroke="#c9a84c" stroke-width="1" opacity=".6"/>
+              <path d="M348,26 L363,38 L378,22" fill="none" stroke="#c9a84c" stroke-width="1" opacity=".6"/>
+            </g>
+            <!-- Column bases left -->
+
+            <!-- Keystone at center top -->
+            <polygon points="330,10 338,20 330,24 322,20" fill="#c9a84c" opacity=".7"/>
+            <circle cx="330" cy="12" r="4.5" fill="#e8cc80" opacity=".8"/>
+            <circle cx="330" cy="12" r="2"   fill="#0b1426"/>
+            <!-- 8-point star at keystone -->
+            <polygon points="330,5 331.8,10 337,10 333,13 334.8,18.5 330,15.5 325.2,18.5 327,13 323,10 328.2,10"
+                     fill="#e8cc80" opacity=".55"/>
+
+            <!-- ── Text content embedded inside the SVG via foreignObject ── -->
+            <foreignObject x="80" y="20" width="500" height="280">
+              <div xmlns="http://www.w3.org/1999/xhtml"
+                   style="display:flex;flex-direction:column;align-items:center;padding-top:22px;gap:0;">
+
+                <!-- Bismillah -->
+                <div class="bismillah font-amiri text-gold-2"
+                     style="font-family:'Amiri',serif;font-size:20px;color:#e8cc80;letter-spacing:.5px;text-shadow:0 0 20px rgba(201,168,76,.6);margin-bottom:8px;">
+                  بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+                </div>
+
+                <!-- Crescent & Star -->
+                <svg width="52" height="52" viewBox="0 0 80 80" style="margin:6px 0;">
+                  <path d="M40,8 A32,32 0 1,1 40,72 A22,22 0 1,0 40,8Z" fill="#c9a84c" opacity=".9"/>
+                  <polygon points="56,32 58,39 65,39 59.5,43.5 61.5,50.5 56,46 50.5,50.5 52.5,43.5 47,39 54,39" fill="#e8cc80" opacity=".95"/>
+                </svg>
+
+                <!-- Name -->
+                <div class="person-name"
+                     style="font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:#ffffff;text-align:center;letter-spacing:.5px;line-height:1.15;text-shadow:0 2px 20px rgba(201,168,76,.5);margin-top:6px;">
+                  Marufa Akter Jerin
+                </div>
+
+                <!-- Subtitle -->
+                <div style="font-family:'Lato',sans-serif;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#c9a84c;font-weight:300;margin-top:8px;">
+                  Matrimonial Profile
+                </div>
+
+              </div>
+            </foreignObject>
+          </svg>
+
+        </div>
+
+      </div>
+      <!-- /header -->
+
+      <!-- ══ BODY ══ -->
+      <div class="body-content px-9 pt-10 pb-8 relative">
+
+        <!-- ── Personal Info ── -->
+        <div class="font-playfair text-[11px] tracking-[4px] uppercase text-gold mt-[22px] mb-[14px] flex items-center gap-3">
+          <div class="tline-l"></div>
+          <span class="flex items-center gap-2">
+            <div class="w-[5px] h-[5px] bg-gold rotate-45 inline-block shrink-0"></div>
+            Personal Info
+            <div class="w-[5px] h-[5px] bg-gold rotate-45 inline-block shrink-0"></div>
+          </span>
+          <div class="tline"></div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[1px]">Date of Birth</div>
+          <div class="text-gold font-bold text-center pt-[1px] px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">09 October 2004</div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[1px]">Place of Birth</div>
+          <div class="text-gold font-bold text-center pt-[1px] px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">Noakhali</div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[1px]">Height</div>
+          <div class="text-gold font-bold text-center pt-[1px] px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">5 Feet 3 Inches</div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[1px]">Occupation</div>
+          <div class="text-gold font-bold text-center pt-[1px] px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">Student</div>
+        </div>
+
+        <!-- Education row (multi-line value) -->
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[4px]">Education</div>
+          <div class="text-gold font-bold text-center pt-[4px] px-[5px]">◆</div>
+          <div class="flex flex-col gap-[5px] pt-[2px] ml-[5px]">
+            <div class="flex gap-2 items-baseline font-lato text-[13px] text-ivory">
+              <span class="bg-gold/[0.15] border border-gold/30 text-gold-2 text-[10px] tracking-[1px] px-[6px] py-[1px] rounded-[2px] whitespace-nowrap font-lato">SSC</span>
+              <span>GPA – 4.78</span>
+            </div>
+            <div class="flex gap-2 items-baseline font-lato text-[13px] text-ivory">
+              <span class="bg-gold/[0.15] border border-gold/30 text-gold-2 text-[10px] tracking-[1px] px-[6px] py-[1px] rounded-[2px] whitespace-nowrap font-lato">HSC</span>
+              <span>GPA – 4.92</span>
+            </div>
+            <div class="flex gap-2 items-baseline font-lato text-[13px] text-ivory">
+              <span class="bg-gold/[0.15] border border-gold/30 text-gold-2 text-[10px] tracking-[1px] px-[6px] py-[1px] rounded-[2px] whitespace-nowrap font-lato">B.Sc</span>
+              <span>Chemistry (2nd Year), Noakhali College</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Family Details ── -->
+        <div class="font-playfair text-[11px] tracking-[4px] uppercase text-gold mt-[26px] mb-[14px] flex items-center gap-3">
+          <div class="tline-l"></div>
+          <span class="flex items-center gap-2">
+            <div class="w-[5px] h-[5px] bg-gold rotate-45 inline-block shrink-0"></div>
+            Family Details
+            <div class="w-[5px] h-[5px] bg-gold rotate-45 inline-block shrink-0"></div>
+          </span>
+          <div class="tline"></div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[1px]">Father's Name</div>
+          <div class="text-gold font-bold text-center pt-[1px] px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">Abul Bashar</div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[1px]">Father's Occupation</div>
+          <div class="text-gold font-bold text-center pt-[1px] px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">Businessman in Saudi Arabia</div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[1px]">Mother's Name</div>
+          <div class="text-gold font-bold text-center pt-[1px] px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">Fatema Akter</div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[1px]">Mother's Occupation</div>
+          <div class="text-gold font-bold text-center pt-[1px] px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">Housewife</div>
+        </div>
+
+        <!-- Siblings row -->
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[4px]">Siblings</div>
+          <div class="text-gold font-bold text-center pt-[4px] px-[5px]">◆</div>
+          <div class="flex flex-col gap-[3px] mt-[2px] ml-[5px]">
+            <div class="text-[11px] tracking-[2px] text-muted uppercase mb-1">Younger Brothers</div>
+            <div class="flex items-center gap-2 font-lato text-[13px] text-ivory">
+              <div class="w-1 h-1 bg-gold rounded-full shrink-0"></div>
+              Sakibul Hasan &nbsp;·&nbsp; Student (Inter 2nd Year)
+            </div>
+            <div class="flex items-center gap-2 font-lato text-[13px] text-ivory">
+              <div class="w-1 h-1 bg-gold rounded-full shrink-0"></div>
+              Ashraful Islam &nbsp;·&nbsp; Student (Class 6)
+            </div>
+            <div class="flex items-center gap-2 font-lato text-[13px] text-ivory">
+              <div class="w-1 h-1 bg-gold rounded-full shrink-0"></div>
+              Abrarul Islam &nbsp;·&nbsp; Student (Class 1)
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Contact Details ── -->
+        <div class="font-playfair text-[11px] tracking-[4px] uppercase text-gold mt-[26px] mb-[14px] flex items-center gap-3">
+          <div class="tline-l"></div>
+          <span class="flex items-center gap-2">
+            <div class="w-[5px] h-[5px] bg-gold rotate-45 inline-block shrink-0"></div>
+            Contact Details
+            <div class="w-[5px] h-[5px] bg-gold rotate-45 inline-block shrink-0"></div>
+          </span>
+          <div class="tline"></div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] border-b border-gold/[0.08] items-start">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal pt-[1px]">Address</div>
+          <div class="text-gold font-bold text-center pt-[1px] px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">
+            Bashar Manjil, East Fatehpur,<br>
+            Kabirhat Pouroshova, Noakhali
+          </div>
+        </div>
+
+        <div class="grid grid-cols-[200px_24px_1fr] py-[7px] items-center">
+          <div class="text-[13px] text-muted tracking-[0.5px] font-normal">Phone</div>
+          <div class="text-gold font-bold text-center px-[5px]">◆</div>
+          <div class="info-value font-playfair text-[15px] text-ivory leading-[1.6] ml-[5px]">
+            01813385381 <span class="text-[12px] text-muted not-italic">(Mother)</span>
+          </div>
+        </div>
+
+      </div>
+      <!-- /body -->
+
+      <!-- ══ FOOTER ══ -->
+      <div class="footer-wrap relative px-[30px] py-[14px] flex items-center justify-center gap-[18px] border-t border-gold/[0.15] overflow-hidden">
+        <div class="flex gap-[6px] items-center">
+          <div class="w-1 h-1 bg-gold rotate-45 opacity-50"></div>
+          <div class="w-1 h-1 bg-gold rotate-45 opacity-50"></div>
+        </div>
+        <div class="footer-arabic font-amiri text-[17px] text-gold-2 opacity-[0.85] relative">
+          الحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ
+        </div>
+        <div class="flex gap-[6px] items-center">
+          <div class="w-1 h-1 bg-gold rotate-45 opacity-50"></div>
+          <div class="w-1 h-1 bg-gold rotate-45 opacity-50"></div>
+        </div>
+      </div>
+
+    </div><!-- /card-inner -->
+  </div><!-- /card -->
+
+</body>
+</html>
